@@ -33,3 +33,5 @@
 
 # env file
 .env
+
+/vendor/bandle
