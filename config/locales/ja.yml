@@ -1,0 +1,76 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ja:
+  books:
+    index:
+      PageTitle: "書籍一覧"
+      Title: "題名"
+      Memo: "説明"
+      Author: "著者"
+      Picture: "画像"
+      EditingBook: "書籍を編集する"
+      NewBook: "書籍を登録する"
+      Detail: "詳細"
+      Edit: "編集"
+      Destroy: "削除"
+      Back: "戻る"
+      confirmDelete: "削除してもよろしいですか？"
+    form:
+      Title: "題名"
+      Memo: "説明"
+      Author: "著者"
+      Picture: "画像"
+    new:
+      NewBook: "書籍を登録する"
+      Back: "戻る"
+    edit:
+      EditingBook: "書籍を編集する"
+      Detail: "詳細"
+      Back: "戻る"
+    show:
+      Title: "題名"
+      Memo: "説明"
+      Author: "著者"
+      Picture: "画像"
+      Edit: "編集"
+      Back: "戻る"
+    create:
+      save: "新規登録しました。"
+    update:
+      update: "更新しました。"
+    destroy:
+      destroy: "削除しました。"
+  helpers:
+    submit:
+      create: "登録する"
+      update: "更新する"
+      submit: "保存する"
