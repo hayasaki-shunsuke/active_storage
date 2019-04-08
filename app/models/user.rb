@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  has_one_attached :avatar
   belongs_to :user, optional: true
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -27,6 +28,14 @@ class User < ApplicationRecord
     user
 
   end
+
+  # def self.from_omniauth(auth)
+  #   where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+  #     user.email = auth.info.email
+  #     user.password = Devise.friendly_token[0,20]
+  #     user.name = auth.info.name
+  #   end
+  # end
 
   def self.dummy_email(auth)
     "#{auth.uid}-#{auth.provider}"
