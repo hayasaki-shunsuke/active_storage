@@ -74,3 +74,8 @@ en:
       create: "Create"
       update: "Update"
       submit: "Submit"
+  layouts:
+    application:
+      userEmail: "User Email"
+      edit: "Edit Profile"
+      logout: "Logout"
